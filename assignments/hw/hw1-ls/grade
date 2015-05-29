@@ -1,2 +1,28 @@
-/ 100
+105/ 100
+Last update Fri May 1 13:55:28 2015 -0700
+
+Error checking for syscalls
+file: [src/ls.cpp] -0
+
+
+test ls output
+[34;1m1[0m  [32;1ma[0m  aa[0m  b[0m  c[0m
++15: Extra - coloring works
+
+
+-5 for missing tests:
+-0: bin/ls -a.*-l.*-R flag does not work
+-0: bin/ls -a.*-R.*-l flag does not work
+-0: bin/ls -l.*-a.*-R flag does not work
+-0: bin/ls -l.*-R.*-a flag does not work
+-0: bin/ls -R.*-a.*-l flag does not work
+-0: bin/ls -R.*-l.*-a flag does not work
+
+-5 for missing tests:
+-0: bin/ls -alR flag does not work
+-0: bin/ls -aRl flag does not work
+-0: bin/ls -laR flag does not work
+-0: bin/ls -lRa flag does not work
+-0: bin/ls -Ral flag does not work
+-0: bin/ls -Rla flag does not work
 
